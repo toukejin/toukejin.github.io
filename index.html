@@ -11,18 +11,20 @@
       .container {
         position: relative;
         width: 50%;
+        top: 50px;
+        margin: 0 auto;
       }
       .overlay {
         position: absolute;
         top: 0;
-       bottom: 0;
+        bottom: 0;
         left: 0;
         right: 0;
         height: 100%;
         width: 100%;
         opacity: 0;
         transition: .5s ease;
-        background-color: #008CBA;
+        background-color: rgba(255, 0, 0, 0);
       }
       .container:hover .overlay {
         opacity: 1;
@@ -35,15 +37,18 @@
         left: 50%;
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
+        font-family: Arial, Helvetica, sans-serif;
       }
     </style>
   </head>
 
-  <body>
+  <body style="background-color: rgba(80, 80, 80, 255);">
     <div class="container">
       <img src="glyph500.png" alt="110111" class="image">
       <div class="overlay">
-        <div class="text">110111</div>
+        <div class="text">
+          <font size="24">110111</font>
+        </div>
       </div>
     </div>
   </body>
