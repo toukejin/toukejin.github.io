@@ -1,55 +1,76 @@
 <!DOCTYPE html>
 <html>
   <head>
+  	<script src="https://kit.fontawesome.com/ec8ded0d7f.js" crossorigin="anonymous"></script>
+
     <style>
-      img {
+      i.fas, i.fab, i.far {
+      color: lightgrey;
+      }
+      .mainBox {
+        background-color: rgba(50, 50, 50, 255);
+        width: 600px;
+        /*margin-left: auto;*/
+        /*margin-right: auto;*/
+        border-radius: 25px;
+        box-shadow: 10px 10px 5px rgba(40, 40, 40, 255);
+      }
+      .logo {
         display: block;
         margin-left: auto;
-        margin-right: auto;
+        /*margin-right: auto;*/
         height: auto;
+        border-radius: 25px;
       }
-      .container {
-        position: relative;
-        width: 50%;
-        top: 50px;
-        margin: 0 auto;
-      }
-      .overlay {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 100%;
-        width: 100%;
-        opacity: 0;
-        transition: .5s ease;
-        background-color: rgba(255, 0, 0, 0);
-      }
-      .container:hover .overlay {
-        opacity: 1;
-      }
-      .text {
+      .mainText {
         color: white;
-        font-size: 20px;
+        font-size: 50px;
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
+        top: 80px;
+        left: 50px;
         font-family: Arial, Helvetica, sans-serif;
+      }
+      .secondText {
+        color: white;
+        font-size: 30px;
+        position: absolute;
+        top: 140px;
+        left: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .icons {
+        position: absolute;
+        top: 185px;
+        left: 50px;
       }
     </style>
   </head>
 
-  <body style="background-color: rgba(80, 80, 80, 255);">
-    <div class="container">
-      <img src="glyph500.png" alt="110111" class="image">
-      <div class="overlay">
-        <div class="text">
-          <font size="24">110111</font>
-        </div>
+  <body style="background-color: rgba(70, 63, 97, 255);">
+  	<div class="mainBox">
+  		<span style="font-size: 20px;" class="icons">
+  		  <a href="https://www.etsy.com/shop/BinaryProps">
+  		    <i class="fas fa-shopping-cart"></i>
+  		  </a>
+  		  <a style="padding-left: 10px;" href="https://www.instagram.com/110111.io/">
+  		  	<i class="fab fa-instagram"></i>
+  		  </a>
+  		    <a style="padding-left: 10px;" href="https://www.thingiverse.com/Toukejin/about">
+  		    <i class="far fa-file"></i>
+  		  </a>
+  		  <a style="padding-left: 10px;" href="mailto:root@110111.io">
+  		    <i class="fas fa-envelope"></i>
+  		  </a>
+  		</span>
+      <div class="mainText">
+        <font>110111.io</font>
       </div>
-    </div>
+      <div class="secondText">
+        <font>Binary Props</font>
+      </div>
+  	  <div>
+	    <img src="glyph180x300.png" alt="110111" class="logo">
+	  </div>
+	</div>
   </body>
 </html>
